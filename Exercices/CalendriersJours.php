@@ -83,39 +83,42 @@
 $day =1;
 
 $TableauMois = array(
-        'Lundi' => 'Lun',
-        'Mardi' => 'Mar',
-        'Mercredi' => 'Mer',
-        'Jeudi' => 'Jeu',
-        'Vendredi' => 'Ven',
-        'Samedi' => 'Sam',
-        'Dimanche' => 'Dim'
+        'Lundi' => 'Lun ',
+        'Mardi' => 'Mar ',
+        'Mercredi' => 'Mer ',
+        'Jeudi' => 'Jeu ',
+        'Vendredi' => 'Ven ',
+        'Samedi' => 'Sam ',
+        'Dimanche' => 'Dim '
 );
 
 echo '<div class="month">
   <ul>
     <li class="prev">&#10094;</li>
     <li class="next">&#10095;</li>
-    <li>August<br><span style="font-size:18px">2017</span></li>
+    <li>December<br><span style="font-size:18px">2019</span></li>
   </ul>
 </div>';
 
 
 echo '<ul class="weekdays">';
     foreach ($TableauMois as $value)
-        echo  $value ;
+        echo "<li> $value </li>";
 
 echo '</ul>';
 
 echo '<ul class="days">';
 
-
+for ($line = 0; $line < 5; $line++){
+    for ($column = 0; $column < 7; $column++) {
+        if ($day<31) {
+            echo '<li>';
+            echo $day;
+            $day++;
+        }
+    }echo '<br>';
+}
 
 echo '</ul>';
-
-
-
-
-
 
 ?>
