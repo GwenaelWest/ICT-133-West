@@ -36,6 +36,7 @@
     <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
 
     <link href="styles/custom.css" rel="stylesheet" type="text/css" />
+    <script src="email/validation.js" type="text/javascript"></script>
 </head>
 <body id="pageBody">
 
@@ -48,8 +49,8 @@
                 <div class="span12">
 
                     <div id="divLogo" class="pull-left">
-                        <a href="index.html" id="divSiteTitle">Your Name</a><br />
-                        <a href="index.html" id="divTagLine">Your Tag Line Here</a>
+                        <a href="../index.html" id="divSiteTitle">Your Name</a><br />
+                        <a href="../index.html" id="divTagLine">Your Tag Line Here</a>
                     </div>
 
                     <div id="divMenuRight" class="pull-right">
@@ -59,7 +60,7 @@
                         </button>
                             <div class="nav-collapse collapse">
                             <ul class="nav nav-pills ddmenu">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="../index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
 							<li class="dropdown">
                             <a href="page.html" class="dropdown-toggle">Page <b class="caret"></b></a>
@@ -79,8 +80,8 @@
                             </ul>
                             </li>
 						    <li><a href="services.html">Services</a></li>
-						    <li class="active"><a href="portfolio.html">Portfolio</a></li>						    
-                            <li><a href="contact.php">Contact</a></li>
+						    <li><a href="portfolio.html">Portfolio</a></li>						    
+                            <li class="active"><a href="contact.html">Contact</a></li>
                             </ul>
                             </div>
                         </div>
@@ -101,153 +102,66 @@
         <div class="divPanel notop page-content">
 
             <div class="breadcrumbs">
-                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Portfolio</span>
+                <a href="../index.html">Home</a> &nbsp;/&nbsp; <span>Contact</span>
             </div>
-
-            <!--Edit Portfolio Content Area here-->			
+            	
             <div class="row-fluid">
-                <div class="span12">
-				
-				<h1>Portfolio</h1>
-            <div class="yoxview">
-                    <div class="row-fluid">
-            <ul class="thumbnails">
-              <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder" /></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-			  <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-		  <div class="row-fluid">
-            <ul class="thumbnails">
-              <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-			  <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
-		  <div class="row-fluid">
-            <ul class="thumbnails">
-              <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-              <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-			  <li class="span3">
-                <div class="thumbnail">
-                  <a href="portfolio/preview-300.png"><img src="portfolio/300x200.png" alt="Thumbnail Placeholder" title="Thumbnail Placeholder"/></a>
-                  <div class="caption">
-                    <h3>Thumbnail label</h3>
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                    <p><a href="#" class="btn btn-primary">Read More...</a></p>
-                  </div>
-                </div>
-              </li>
-            </ul>
-			</div>
-          </div>
+                <div class="span8" id="divMain">
 
+                    <h1>Contact Us</h1>
+                   	<h3 style="color:#FF6633;"><?php echo @$_GET['msg'];?></h3>
+					<hr>
+			<!--Start Contact form -->		                                                
+<form name="enq" method="post" action="email/" onsubmit="return validation();">
+  <fieldset>
+    
+	<input type="text" name="name" id="name" value=""  class="input-block-level" placeholder="Name" />
+    <input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email" />
+    <textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Comments"></textarea>
+    <div class="actions">
+	<input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-info pull-right" title="Click here to submit your message!" />
+	</div>
+	
+	</fieldset>
+</form>  				 
+			<!--End Contact form -->											 
                 </div>
-                
-            </div>
-			<!--/End Portfolio Content Area-->
+				
+			<!--Edit Sidebar Content here-->	
+                <div class="span4 sidebar">
+
+                    <div class="sidebox">
+                        <h3 class="sidebox-title">Contact Information</h3>
+                    <p>
+                        <address><strong>Your Company, Inc.</strong><br />
+                        Address<br />
+                        City, State, Zip<br />
+                        <abbr title="Phone">P:</abbr> (123) 456-7890</address> 
+                        <address>  <strong>Email</strong><br />
+                        <a href="mailto:#">first.last@gmail.com</a></address>  
+                    </p>     
+                     
+					 <!-- Start Side Categories -->
+        <h4 class="sidebox-title">Sidebar Categories</h4>
+        <ul>
+          <li><a href="#">Quisque diam lorem sectetuer adipiscing</a></li>
+          <li><a href="#">Interdum vitae, adipiscing dapibus ac</a></li>
+          <li><a href="#">Scelerisque ipsum auctor vitae, pede</a></li>
+          <li><a href="#">Donec eget iaculis lacinia non erat</a></li>
+          <li><a href="#">Lacinia dictum elementum velit fermentum</a></li>
+          <li><a href="#">Donec in velit vel ipsum auctor pulvinar</a></li>
+        </ul>
+					<!-- End Side Categories -->
+                    					
+                    </div>
+					
+					
+                    
+                </div>
+			<!--/End Sidebar Content-->
+				
+				
+            </div>			
 
             <div id="footerInnerSeparator"></div>
         </div>

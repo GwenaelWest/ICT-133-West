@@ -27,7 +27,6 @@
         <link rel="stylesheet" href="scripts/fontawesome/css/font-awesome-ie7.min.css">
     <![endif]-->
 
-    <link href="scripts/wookmark/css/style.css" rel="stylesheet" type="text/css" />	<link href="scripts/yoxview/yoxview.css" rel="stylesheet" type="text/css" />
     <link href="http://fonts.googleapis.com/css?family=Syncopate" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Abel" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet" type="text/css">
@@ -36,7 +35,6 @@
     <link href="http://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet" type="text/css">
 
     <link href="styles/custom.css" rel="stylesheet" type="text/css" />
-    <script src="email/validation.js" type="text/javascript"></script>
 </head>
 <body id="pageBody">
 
@@ -49,8 +47,8 @@
                 <div class="span12">
 
                     <div id="divLogo" class="pull-left">
-                        <a href="index.html" id="divSiteTitle">Your Name</a><br />
-                        <a href="index.html" id="divTagLine">Your Tag Line Here</a>
+                        <a href="../index.html" id="divSiteTitle">Your Name</a><br />
+                        <a href="../index.html" id="divTagLine">Your Tag Line Here</a>
                     </div>
 
                     <div id="divMenuRight" class="pull-right">
@@ -60,11 +58,11 @@
                         </button>
                             <div class="nav-collapse collapse">
                             <ul class="nav nav-pills ddmenu">
-                            <li><a href="index.html">Home</a></li>
+                            <li><a href="../index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
-							<li class="dropdown">
+							<li class="active dropdown">
                             <a href="page.html" class="dropdown-toggle">Page <b class="caret"></b></a>
-                            <ul class="dropdown-menu">                            
+                            <ul class="dropdown-menu">
                             <li><a href="full.html">Full Page</a></li>
                             <li><a href="2-column.html">Two Column</a></li>
                             <li><a href="3-column.html">Three Column</a></li>
@@ -81,7 +79,7 @@
                             </li>
 						    <li><a href="services.html">Services</a></li>
 						    <li><a href="portfolio.html">Portfolio</a></li>						    
-                            <li class="active"><a href="contact.html">Contact</a></li>
+                            <li><a href="contact.php">Contact</a></li>
                             </ul>
                             </div>
                         </div>
@@ -102,66 +100,44 @@
         <div class="divPanel notop page-content">
 
             <div class="breadcrumbs">
-                <a href="index.html">Home</a> &nbsp;/&nbsp; <span>Contact</span>
+                <a href="../index.html">Home</a> &nbsp;/&nbsp; <span>Two Column</span>
             </div>
-            	
+
             <div class="row-fluid">
-                <div class="span8" id="divMain">
+			
+			<!--Edit Sidebar Content here-->
+                <div class="span3">                    
+                 <h3>Left Sidebar Content</h3>
+                 <p>Lorem Ipsum is simply dummy text of the printing and <a href="#">typesetting industry</a>.</p>
+				 <p> Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>     
+                
+				
+        <h3>Static Image</h3>        
+          <img src="images/windmill.jpg" class="img-polaroid" alt="">
+		  
+			<h3>Another Section</h3>
+                 <p>Lorem Ipsum is simply dummy text of the printing and <a href="#">typesetting industry</a>.</p>
+				 <p> Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s.</p>                 	
+          </div>
+				<!--/End Sidebar Content -->        				
+					                 
+            	<!--Edit Main Content Area here-->
+                <div class="span9" id="divMain">
 
-                    <h1>Contact Us</h1>
-                   	<h3 style="color:#FF6633;"><?php echo @$_GET['msg'];?></h3>
-					<hr>
-			<!--Start Contact form -->		                                                
-<form name="enq" method="post" action="email/" onsubmit="return validation();">
-  <fieldset>
-    
-	<input type="text" name="name" id="name" value=""  class="input-block-level" placeholder="Name" />
-    <input type="text" name="email" id="email" value="" class="input-block-level" placeholder="Email" />
-    <textarea rows="11" name="message" id="message" class="input-block-level" placeholder="Comments"></textarea>
-    <div class="actions">
-	<input type="submit" value="Send Your Message" name="submit" id="submitButton" class="btn btn-info pull-right" title="Click here to submit your message!" />
-	</div>
-	
-	</fieldset>
-</form>  				 
-			<!--End Contact form -->											 
-                </div>
-				
-			<!--Edit Sidebar Content here-->	
-                <div class="span4 sidebar">
-
-                    <div class="sidebox">
-                        <h3 class="sidebox-title">Contact Information</h3>
-                    <p>
-                        <address><strong>Your Company, Inc.</strong><br />
-                        Address<br />
-                        City, State, Zip<br />
-                        <abbr title="Phone">P:</abbr> (123) 456-7890</address> 
-                        <address>  <strong>Email</strong><br />
-                        <a href="mailto:#">first.last@gmail.com</a></address>  
-                    </p>     
-                     
-					 <!-- Start Side Categories -->
-        <h4 class="sidebox-title">Sidebar Categories</h4>
-        <ul>
-          <li><a href="#">Quisque diam lorem sectetuer adipiscing</a></li>
-          <li><a href="#">Interdum vitae, adipiscing dapibus ac</a></li>
-          <li><a href="#">Scelerisque ipsum auctor vitae, pede</a></li>
-          <li><a href="#">Donec eget iaculis lacinia non erat</a></li>
-          <li><a href="#">Lacinia dictum elementum velit fermentum</a></li>
-          <li><a href="#">Donec in velit vel ipsum auctor pulvinar</a></li>
-        </ul>
-					<!-- End Side Categories -->
-                    					
-                    </div>
+                    <h1>Two Column (left-hand sidebar)</h1>
+					<hr>	
+                    <p>Aliquam a tellus quam. Phasellus sit amet bibendum nunc. Donec lobortis nulla diam, a laoreet nisi rhoncus vitae. Suspendisse tincidunt, nulla sed convallis consectetur, diam enim ultricies nulla, a luctus odio nisi in ligula. Aenean ornare rhoncus fermentum. Suspendisse et enim in nibh dictum blandit et id nisi. Duis mollis, libero id venenatis viverra, metus lacus placerat turpis, at semper orci odio id lectus. Proin fringilla quam porttitor est mattis, id aliquam est laoreet. Nulla congue urna nisi, eu commodo dolor aliquet eget. Donec ullamcorper diam quis porttitor convallis. Aliquam erat volutpat. Phasellus pulvinar sagittis nunc et adipiscing.</p>
+                    <p>Duis facilisis tellus ante, eu sodales neque ornare vitae. Pellentesque laoreet velit diam, quis tempor est fringilla sed. Curabitur in ullamcorper lectus, et gravida mauris. Suspendisse tristique euismod metus, quis facilisis lectus cursus faucibus. Nulla sed leo sed tellus egestas mattis sed id libero. Aenean at scelerisque augue. Phasellus at sem porttitor, auctor metus pharetra, lacinia sapien.</p>
+                    <p>Etiam enim dui, dictum vitae lobortis quis, placerat feugiat leo. Sed commodo elit orci, non tincidunt velit suscipit in. Nulla facilisi. Praesent vel eros tristique, lobortis orci vitae, interdum quam. In hac habitasse platea dictumst. Praesent lobortis iaculis ante, at laoreet est pulvinar vel. Cras vulputate tempus nulla eget venenatis. Suspendisse magna lacus, tincidunt nec pulvinar sit amet, semper quis neque. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Cras vehicula volutpat enim, id vehicula dolor porttitor in. Nam vehicula velit erat, eu consectetur elit luctus ut. Aliquam ac convallis enim, et venenatis dui. Maecenas et leo metus. Etiam diam ante, lacinia vitae orci vel, dignissim vestibulum tortor. Aliquam elit sapien, pellentesque eu consectetur et, tempor vitae nisl.</p>		
+                    <p>Donec arcu nisi, euismod vitae facilisis id, pulvinar eget tortor. Nunc lobortis ultrices pellentesque. Sed sollicitudin dapibus erat a interdum. Cras massa mauris, rutrum vel nisi non, malesuada lobortis velit. Fusce eu tellus justo. Donec dictum, purus at adipiscing rhoncus, risus libero bibendum ipsum, mollis vestibulum arcu arcu eget elit. In tempor laoreet ultricies. 
+					Maecenas lacus neque, fermentum in blandit a, mollis in libero. Vivamus ornare eros quis arcu cursus, at luctus nisi accumsan.
+					</p>					
+				</div>	                             
+                    					                  
+				<!--/End Main Content Area here-->	                
 					
-					
-                    
-                </div>
-			<!--/End Sidebar Content-->
-				
-				
-            </div>			
+							
+            </div>
 
             <div id="footerInnerSeparator"></div>
         </div>
@@ -271,11 +247,8 @@
 <script src="scripts/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <script src="scripts/default.js" type="text/javascript"></script>
 
-<script src="scripts/wookmark/js/jquery.wookmark.js" type="text/javascript"></script>
-<script type="text/javascript">$(window).load(function () {var options = {autoResize: true,container: $('#gridArea'),offset: 10};var handler = $('#tiles li');handler.wookmark(options);$('#tiles li').each(function () { var imgm = 0; if($(this).find('img').length>0)imgm=parseInt($(this).find('img').not('p img').css('margin-bottom')); var newHeight = $(this).find('img').height() + imgm + $(this).find('div').height() + $(this).find('h4').height() + $(this).find('p').not('blockquote p').height() + $(this).find('iframe').height() + $(this).find('blockquote').height() + 5;if($(this).find('iframe').height()) newHeight = newHeight+15;$(this).css('height', newHeight + 'px');});handler.wookmark(options);handler.wookmark(options);});</script>
-<script src="scripts/yoxview/yox.js" type="text/javascript"></script>
-<script src="scripts/yoxview/jquery.yoxview-2.21.js" type="text/javascript"></script>
-<script type="text/javascript">$(document).ready(function () {$('.yoxview').yoxview({autoHideInfo:false,renderInfoPin:false,backgroundColor:'#ffffff',backgroundOpacity:0.8,infoBackColor:'#000000',infoBackOpacity:1});$('.yoxview a img').hover(function(){$(this).animate({opacity:0.7},300)},function(){$(this).animate({opacity:1},300)});});</script>
+
+
 
 
 </body>
