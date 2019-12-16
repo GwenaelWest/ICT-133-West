@@ -101,6 +101,7 @@ echo '<div class="month">
 </div>';
 
 
+
 echo '<ul class="weekdays">';
     foreach ($TableauMois as $value)
         echo "<li> $value </li>";
@@ -112,6 +113,9 @@ echo '<ul class="days">';
 for ($line = 0; $line < 5; $line++){
     for ($column = 0; $column < 7; $column++) {
         if ($day<31) {
+            if ($day == date('j')){
+                echo '<span style="background-color: #77737a"></span>';
+            }
             echo '<li>';
             echo $day;
             $day++;
@@ -119,6 +123,11 @@ for ($line = 0; $line < 5; $line++){
     }echo '<br>';
 }
 
+//  Boucle qui met en évidence le jour actuel
+
+if ($day == date('j')){
+    echo '<span style="background-color: #77737a"></span>';
+}
 echo '</ul>';
 
 ?>
