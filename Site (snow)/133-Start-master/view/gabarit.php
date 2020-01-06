@@ -68,15 +68,17 @@
                         </button>
                         <div class="nav-collapse collapse">
                             <ul class="nav nav-pills ddmenu">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li><a href="view/Content/about.html">About</a></li>
+                                <li <?php if (($_GET['action']=="home")|| (!isset($_GET['action']))) :?> class="active"<?php endif ?>><a href="index.php?action=home">Accueil</a></li>
+                                <li <?php if ($_GET['action']=="login") :?>class="active" <?php endif ?>> <a href="index.php?action=login">Login</a></li>
+                                <li <?php if ($_GET['action']=="products") :?>class="active" <?php endif ?>> <a href="view/Content/about.html">Produits</a></li>
+                                <!--   ------ Exemple de multi menu déroulant ------
                                 <li class="dropdown">
-                                    <a href="view/Content/page.html" class="dropdown-toggle">Page <b class="caret"></b></a>
+                                    <a href="view/Content/page.html" class="dropdown-toggle">Produits <b class="caret"></b></a>
                                     <ul class="dropdown-menu">
                                         <li><a href="view/Content/full.html">Full Page</a></li>
                                         <li><a href="view/Content/2-column.html">Two Column</a></li>
                                         <li><a href="view/Content/3-column.html">Three Column</a></li>
-                                        <li><a href="../documentation/index.html">Documentation</a></li>
+                                        <li><a href="view/documentation/index.html">Documentation</a></li>
                                         <li class="dropdown">
                                             <a href="#" class="dropdown-toggle">Dropdown Item &nbsp;&raquo;</a>
                                             <ul class="dropdown-menu sub-menu">
@@ -86,10 +88,7 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                </li>
-                                <li><a href="view/Content/services.html">Services</a></li>
-                                <li><a href="view/Content/portfolio.html">Portfolio</a></li>
-                                <li><a href="view/Content/contact.php">Contact</a></li>
+                                </li> -->
                             </ul>
                         </div>
                     </div>
@@ -98,34 +97,6 @@
             </div>
         </div>
 
-        <div class="row-fluid">
-            <div class="span12">
-
-                <div id="headerSeparator"></div>
-
-                <div class="camera_full_width">
-                    <div id="camera_wrap">
-                        <div data-src="slider-images/4.jpg">
-                            <div class="camera_caption fadeFromBottom cap1">Les derniers modèles toujours à
-                                disposition.
-                            </div>
-                        </div>
-                        <div data-src="slider-images/1.jpg">
-                            <div class="camera_caption fadeFromBottom cap2">Découvrez des paysages fabuleux avec des
-                                sensations.
-                            </div>
-                        </div>
-                        <div data-src="slider-images/2.jpg"></div>
-                    </div>
-                    <br style="clear:both"/>
-                    <div style="margin-bottom:40px"></div>
-                </div>
-
-                <div id="headerSeparator2"></div>
-
-            </div>
-        </div>
-    </div>
 
     <div class="contentArea">
 

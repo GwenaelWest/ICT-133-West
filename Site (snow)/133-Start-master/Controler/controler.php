@@ -11,5 +11,12 @@ function home(){
     require "view/home.php";
 }
 
+/**
+ *   Function to redirect the user to the login page
+ */
+function login(){
+    $_GET['action']="login";
+    require "view/login.php";
+}
 
 ?>

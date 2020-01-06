@@ -13,8 +13,8 @@ if (isset($_GET['action'])){
         case 'home' :
             home();
             break;
-        case 'contact' :
-            contact();
+        case 'login' :
+            login();
             break;
         default :
             home();
