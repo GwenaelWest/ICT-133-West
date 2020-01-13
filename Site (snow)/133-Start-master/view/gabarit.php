@@ -104,6 +104,7 @@
 
 
             <div class="row-fluid">
+                 <?=@$_SESSION["user"];?>
                 <!--Edit Main Content Area here-->
                 <?=$content; ?>
                 <!--End Main Content-->

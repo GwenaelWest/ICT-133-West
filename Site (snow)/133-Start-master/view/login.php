@@ -15,14 +15,15 @@
     <h2>Anthropocène</h2>
     <p>on l'appelait ainsi car .</p>
 
-    <form action="/action_page.php">
+
+    <form method="post" action="index.php?action=login">
         <fieldset>
             <legend>Personal information:</legend>
             Name<br>
-            <input type="text" name="firstname" value="Kob'ander" required>
+            <input type="text" name="user" required>
             <br>
             Password<br>
-            <input type="password" name="lastname" required>
+            <input type="password" name="mdp" required>
             <br><br>
             <input type="submit" value="Submit">
         </fieldset>
