@@ -30,4 +30,9 @@ function login()
     }
 }
 
+function register(){
+    $_GET['action']="register";
+    require "view/register.php";
+}
+
 ?>

@@ -12,8 +12,8 @@
     <html>
     <body>
 
-    <h2>Anthropocène</h2>
-    <p>on l'appelait ainsi car .</p>
+    <h2>Connexion</h2>
+    <p></p>
 
 
     <form method="post" action="index.php?action=login">
@@ -26,6 +26,8 @@
             <input type="password" name="mdp" required>
             <br><br>
             <input type="submit" value="Submit">
+            <a href="index.php?action=register">  Register</a>
+
         </fieldset>
     </form>
 
