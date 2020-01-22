@@ -11,13 +11,13 @@ if (isset($_GET['action'])){
     $action=$_GET['action'];
     switch ($action){
         case 'home' :
-            home();
+            home(@$_POST);
             break;
         case 'login' :
-            login();
+            login(@$_POST);
             break;
         case 'register' :
-            register();
+            register(@$_POST);
             break;
         default :
             home();
