@@ -32,7 +32,19 @@ function login()
 
 function register(){
     $_GET['action']="register";
-    require "view/register.php";
+    
+    $write="model/snows.json";         /* chemin du fichier json */
+
+    $data=array(                            /* tableau enregistrant les données du user et du password*/
+        $username=@$_POST["username"],
+        $password=@$_POST["password"],
+    );
+
+    $encode=json_encode($data);                         /* encode les données en format json */
+
+    file_put_contents($write,$encode);                   /* écris le contenu dans le fichier json.*/
+    
+    require "view/register.php"; 
 }
 
 ?>
