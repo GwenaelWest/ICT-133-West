@@ -39,6 +39,62 @@ $titre = "Rent A Snow - Accueil"
 
     </div>
 </div>
+
+/** Tableau mis en commentaire car à un petit bug 
+<?php
+$day =1;
+
+$TableauMois = array(
+        'Lundi' => 'Lun ',
+        'Mardi' => 'Mar ',
+        'Mercredi' => 'Mer ',
+        'Jeudi' => 'Jeu ',
+        'Vendredi' => 'Ven ',
+        'Samedi' => 'Sam ',
+        'Dimanche' => 'Dim '
+);
+
+echo '<div class="month">
+  <ul>
+    <li class="prev">&#10094;</li>
+    <li class="next">&#10095;</li>
+    <li>December<br><span style="font-size:18px">2019</span></li>
+  </ul>
+</div>';
+
+
+
+echo '<ul class="weekdays">';
+    foreach ($TableauMois as $value)
+        echo "<li> $value </li>";
+
+echo '</ul>';
+
+echo '<ul class="days">';
+
+for ($line = 0; $line < 5; $line++){
+    for ($column = 0; $column < 7; $column++) {
+        if ($day<31) {
+            if ($day == date('j')){
+                echo '<span style="background-color: #77737a"></span>';
+            }
+            echo '<li>';
+            echo $day;
+            $day++;
+        }
+    }echo '<br>';
+}
+
+//  Boucle qui met en évidence le jour actuel
+
+if ($day == date('j')){
+    echo '<span style="background-color: #77737a"></span>';
+}
+echo '</ul>';
+
+?> **/
+
+
 </div>
 
 <div class="span12" id="divMain">
